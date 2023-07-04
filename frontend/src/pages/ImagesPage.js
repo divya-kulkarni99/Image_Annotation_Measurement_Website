@@ -7,7 +7,7 @@ function ImagesPage() {
   
 
   useEffect(() => {
-    fetch("http://localhost:5000/images/view")
+    fetch("https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/view")
       .then((res) => res.json())
       .then((data) => {
         setImages(data.data);
