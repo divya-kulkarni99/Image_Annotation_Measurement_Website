@@ -8,7 +8,7 @@ require("dotenv").config();
 const bodyParser = require('body-parser');
 app.use(cors(
   {
-      origin: ["https://nasa-apodapi-webapp-1.vercel.app"],
+      origin: ["https://image-annotation-measurement-website.vercel.app"],
       methods: ["POST", "GET"],
   }
 ));
