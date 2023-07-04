@@ -6,7 +6,12 @@ require("dotenv").config();
 
 
 const bodyParser = require('body-parser');
-app.use(cors());
+app.use(cors(
+  {
+      origin: ["https://nasa-apodapi-webapp-1.vercel.app"],
+      methods: ["POST", "GET"],
+  }
+));
 app.set("view engine","ejs");
 app.use(express.urlencoded({extended : true}));
 app.use(bodyParser.json({ limit: '100mb' }));
@@ -100,7 +105,8 @@ app.get("/images/edit/:id", (req, res) => {
 
  
 
-
+const port = process.env.PORT || 8080;
+app.listen(port, console.log(`Listening on port ${port}...`));
 
 
 
