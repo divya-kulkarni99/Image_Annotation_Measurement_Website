@@ -26,7 +26,7 @@ mongoose
 })
 .then(() => {console.log("Connected to Database");
 })
-.catch(e =>console.log("Failed to connect to Database:", error));
+.catch(e =>console.log("Failed to connect to Database:", e));
 
 
 require("./Imagesdatabase"); 
@@ -34,7 +34,7 @@ const Images = mongoose.model("ImagesDetails");
 
 app.get("/",(req,res) =>{
   res.json("Hello");
-  }
+  });
 app.post("/images/upload", async (req, res) => {
   const { base64 } = req.body;
   try {
