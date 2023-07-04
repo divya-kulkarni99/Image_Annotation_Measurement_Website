@@ -22,7 +22,7 @@ function UploadPage(props) {
 
 
 function uploadImage() {
-  fetch("http://localhost:5000/images/upload", {
+  fetch("https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/upload", {
       method: "POST",
       crossDomain: true,
       headers: {
