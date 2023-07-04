@@ -26,7 +26,7 @@ function ImagesPage() {
         
         <Link
           key={index}
-          to={`/images/edit/${image._id}`} 
+          to={`https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${image._id}`} 
         >
           <img
             alt="All Images"
