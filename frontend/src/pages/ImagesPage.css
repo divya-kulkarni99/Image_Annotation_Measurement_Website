@@ -1,0 +1,21 @@
+h2{
+    padding: 3rem;
+
+    text-align: center;
+
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  
+  .images-grid img {
+    height: 300px;
+    width: 300px;
+  }
+
+  
+  

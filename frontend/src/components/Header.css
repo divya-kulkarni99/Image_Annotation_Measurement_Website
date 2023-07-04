@@ -1,0 +1,53 @@
+header{
+    display: grid;
+    grid-template-areas:
+    "image"
+    "heading1";
+    grid-template-rows:max-content;
+  
+
+    margin: 0;
+  
+    font-style: sans-serif;
+}
+
+.header-title{
+    grid-area: heading1;
+    padding-top: 1rem;
+}
+
+.header-logo{
+    grid-area: image;
+
+    height: 80px;
+    width: 80px;
+}
+@media screen and (min-width: 50rem){
+    header{
+        display: grid;
+        grid-template-areas:
+        "image heading1";
+        grid-template-rows: 25% auto;
+      
+        margin: 0;
+      
+        font-style: sans-serif;
+    }
+    
+    .header-title{
+        grid-area: heading1;
+
+        padding-top: 1rem;
+        
+    }
+    
+    .header-logo{
+        grid-area: image;
+    
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
+

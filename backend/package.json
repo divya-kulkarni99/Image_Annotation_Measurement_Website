@@ -1,0 +1,28 @@
+{
+  "name": "image_annotation_measurement_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "divya",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^2.0.22",
+    "sharp": "^0.32.1"
+  },
+  "browser": {
+    "child_process": false
+  },
+  "devDependencies": {
+    "webpack": "^5.86.0"
+  }
+}

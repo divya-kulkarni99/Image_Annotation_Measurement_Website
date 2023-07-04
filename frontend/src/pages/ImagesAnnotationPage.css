@@ -1,0 +1,56 @@
+.annotate-div {
+  
+  margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+.canvas {
+  border: 1px solid #000;
+  margin-top: 10px;
+
+  cursor: crosshair;
+
+}
+  
+.keypoints {
+  margin-top: 20px;
+  
+}
+
+.keypoint {
+  color: black;
+
+  cursor: pointer;
+
+  margin-bottom: 5px;
+
+}
+
+.keypoint.selected {
+  color: green;
+}
+
+.distance {
+  margin-top: 20px;
+}
+
+.button-savekeypoints{
+
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;   
+    border: none;
+
+    background-color: #F57200;
+    color: white;
+
+    cursor:pointer;
+}
+.button-savekeypoints:hover{
+  background-color: #c9551c;
+  color: white;
+}
