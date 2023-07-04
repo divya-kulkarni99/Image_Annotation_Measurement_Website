@@ -119,7 +119,7 @@ function ImagesAnnotationPage() {
  };
 
  const handleSaveKeypoints = () => {
-  const url = `https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${id}`;
+  const url = "https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${id}";
   fetch(url, {
     method: 'POST',
     headers: {
@@ -155,7 +155,7 @@ function ImagesAnnotationPage() {
  }, [isDragging, handleKeypointDrag]);
 
  useLayoutEffect(() => {
-   fetch(`https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${id}`)
+   fetch("https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${id}")
      .then((res) => res.json())
      .then((data) => {
        setImage(data.data);
