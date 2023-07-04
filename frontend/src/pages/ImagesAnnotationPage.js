@@ -118,14 +118,16 @@ function ImagesAnnotationPage() {
    setActiveKeypoint(null);
  };
 
- const handleSaveKeypoints = () => {
-  const url = "https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${id}";
+const handleSaveKeypoints = () => {
+  const url = `https://image-annotation-measurement-website-divyakulkarni.vercel.app/images/edit/${id}`;
+  const requestBody = JSON.stringify(keypoints);
+
   fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(keypoints),
+    body: requestBody,
   })
     .then((response) => response.json())
     .then((data) => {
@@ -135,6 +137,7 @@ function ImagesAnnotationPage() {
       console.error('Error saving keypoints:', error);
     });
 };
+
 
  useLayoutEffect(() => {
    const canvas = canvasRef.current;
