@@ -26,7 +26,7 @@ function ImagesPage() {
         
         <Link
           key={index}
-          to={`/images/edit/${image._id}`} 
+          to={"/images/edit/${image._id}"} 
         >
           <img
             alt="All Images"
