@@ -28,11 +28,6 @@ mongoose
 })
 .catch(e =>console.log("Failed to connect to Database:", error));
 
-app.listen(5000, () =>{
-    console.log("Sever Started");
-}
-);
-
 
 require("./Imagesdatabase"); 
 const Images = mongoose.model("ImagesDetails");
