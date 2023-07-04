@@ -37,7 +37,9 @@ app.listen(5000, () =>{
 require("./Imagesdatabase"); 
 const Images = mongoose.model("ImagesDetails");
 
-
+app.get("/",(req,res) =>{
+  res.json("Hello");
+  }
 app.post("/images/upload", async (req, res) => {
   const { base64 } = req.body;
   try {
